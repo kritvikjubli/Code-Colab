@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-page-wrapper{
   display: flex;
-  flex-direction: column;
+  height: 100vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: floralwhite;
 }
 
-.App-link {
-  color: #61dafb;
+.form-wrapper{
+  background-color: #282a36;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer a{
+  color: #4aed88;
+}
+
+.input-grp{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-label{
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.home-page-logo{
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+.inputbox{
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-bottom: 14px;
+  background-color: #eee;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn{
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.join , .leave-btn{
+  background-color: #4aed88;
+  width: 100px;
+  margin-left: auto;
+}
+
+.join:hover , .leave-btn:hover{
+  background-color: #2b824e;
+}
+
+.create-info{
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.create-new-btn{
+  text-decoration: none;
+  color: #4aed88;
+  border-bottom: 1px solid #4aed88;
+  transition: all 0.3s ease-in-out;
+}
+.create-new-btn:hover ,
+footer a:hover{
+  color: #2b824e;
+  border-color: #2b824e;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+}
+
+.main-wrap{
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  height: 100vh;
+}
+
+.aside{
+  background: #1c1e29;
+  padding: 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-inner{
+  flex: 1;
+}
+
+.clients-list{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.client{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.userName{
+  margin-top: 10px;
+}
+
+.logo{
+  border-bottom: 2px solid #424242;
+  padding-bottom: 10px;
+}
+
+.leave-btn{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.CodeMirror{
+  font-size: 20px;
+  min-height: calc(100vh - 20px);
+  line-height: 1.6px;
+  padding-top: 20px;
 }
